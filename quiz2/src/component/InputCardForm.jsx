@@ -8,6 +8,7 @@ const InputCardForm = () => {
 
     function handleEvent(e){
        const {name, value} = e.target
+       console.log(value)
        if(name === "cardName"){
         setCardName(value)
        }else if(name === "cardNumber"){
@@ -21,23 +22,25 @@ const InputCardForm = () => {
     }
     return(
         <>
-            <label htmlFor="card">
-                Card Holder Name
-            </label>
-            <input  name="cardName" placeholder="card name" onInput={handleEvent} value={cardName} />
-            <label htmlFor="card">
-                Card Number
-            </label>
-            <input type="number" name="cardNumber" placeholder="card number" onInput={handleEvent} value={cardNumber}/>
-            <label htmlFor="card">
-                Date
-            </label>
-            <input type="date" name="date" placeholder="date" onInput={handleEvent} value={date}/>
-            <label htmlFor="card">
-                CVC
-            </label>
-            <input type="number" name="cvc" placeholder="e.g 123" onInput={handleEvent} value={cvc}/>
+            <div style={{display: "inline-block"}}>
+                <label htmlFor="card">
+                    Card Holder Name
+                </label>
+                <input  name="cardName" placeholder="card name" onInput={handleEvent} value={cardName} />
+                <label htmlFor="card">
+                    Card Number
+                </label>
+                <input type="number" name="cardNumber" placeholder="card number" onInput={handleEvent} value={cardNumber}/>
+                <label htmlFor="card">
+                    Date
+                </label>
+                <input type="date" name="date" placeholder="date" onInput={handleEvent} value={date}/>
+                <label htmlFor="card">
+                    CVC
+                </label>
+                <input type="number" name="cvc" placeholder="e.g 123" onInput={handleEvent} value={cvc}/>
             
+            </div>
 
 
 

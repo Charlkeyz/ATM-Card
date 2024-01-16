@@ -5,8 +5,8 @@ const CardCvc = () => {
     const {cvc} = useContext(CardContext)
     return(
        
-       <div style={{width: 100, height: 100, backgroundColor: 'green', color: 'white'}}>
-            <h3>{cvc}</h3>
+       <div style={{width: 200, height: 200, backgroundColor: 'green', color: 'white'}}>
+            <h3>cvc:{cvc}</h3>
        </div>
     )
 }
